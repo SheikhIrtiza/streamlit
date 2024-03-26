@@ -22,7 +22,7 @@ python_prompt = PromptTemplate(
     template="Explain {question} in simple terms."
 )
 
-# Step 3: Chat Functionality
+# Step 3: Chat Functionality.
 def process_message(message):
     if isinstance(message, str):
         message = HumanMessage(content=message)
