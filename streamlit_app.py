@@ -16,6 +16,14 @@ llm = OpenAI(model_name="gpt-3.5-turbo")
 # Initialize chat model
 chat = ChatOpenAI(model_name="gpt-3.5-turbo", temperature=0.3)
 
+# streamlit framework
+st.title('LangChain demo')
+input_text=st.text_input("You:","Type your message here...")
+
+llm = OpenAI(temperature=0.8)
+
+if input_text:
+    st.write(llm(input_text))
 # Step 2: Define Prompt Templates
 python_prompt = PromptTemplate(
     input_variables=["question"],
