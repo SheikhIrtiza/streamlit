@@ -7,7 +7,7 @@ from langchain.chat_models import ChatOpenAI
 from langchain import PromptTemplate
 
 
-# Load environment variables
+# Load environment variables.
 load_dotenv(find_dotenv())
 
 # Initialize language model
