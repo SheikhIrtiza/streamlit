@@ -37,16 +37,3 @@ def process_message(message):
     response = chat([message])
     return response.content
 
-# # Step 4: Main Loop
-# def main():
-#     print("Welcome! I'm a Python chatbot. Ask me anything about Python programming.")
-#     while True:
-#         user_input = input("You: ")
-#         if user_input.lower() in ['quit', 'exit', 'bye']:
-#             print("Chatbot: Goodbye!")
-#             break
-#         response = process_message(user_input)
-#         print("Chatbot:", response)
-
-# if __name__ == "__main__":
-#     main()
